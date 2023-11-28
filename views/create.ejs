@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  
+  <%- include('header.ejs')%>
+  <%- include('nav.ejs')%>
+
+  <h1>This is Create Page</h1> <br><br>
+
+  <form action="/create" method="POST">
+
+  <input type="text" placeholder="Title" name="title"><br><br>
+  <input type="text" placeholder="Description" name="description"><br><br>
+  <input type="text" placeholder="Place" name="place"><br><br>
+  <input type="number" placeholder="Salary" name="salary"><br><br>
+  <input type="text" placeholder="Experience" name="experience"><br><br>
+  <input type="text" placeholder="Designation" name="designation"><br><br>
+  <input type="number" placeholder="Applicants" name="applicants"><br><br>
+  <input type="text" placeholder="Job Type" name="jobtype"><br><br>
+  <input type="text" placeholder="Opening date" name="openingdate"><br><br>
+  <input type="text" placeholder="Closing date" name="closingdate"><br><br>
+
+   <button type="submit" >SUBMIT</button>
+
+  </form>
+
+  <%- include('footer.ejs')%>
+
+
+
+
+
+</body>
+</html>

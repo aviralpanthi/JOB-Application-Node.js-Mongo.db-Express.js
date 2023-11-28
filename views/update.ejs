@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  
+  <%- include('header.ejs')%>
+  <%- include('nav.ejs')%>
+  <h1>This is Update Page</h1> <br><br>
+
+  <form action="/update/<%=up.id%>" method="POST">
+
+  <input value="<%= up.title%>" type="text" placeholder="Title" name="title"><br><br>
+  <input value="<%= up.description%>" type="text" placeholder="Description" name="description"><br><br>
+  <input value="<%= up.place%>" type="text" placeholder="Place" name="place"><br><br>
+  <input value="<%= up.salary%>" type="number" placeholder="Salary" name="salary"><br><br>
+  <input value="<%= up.experience%>" type="text" placeholder="Experience" name="experience"><br><br>
+  <input value="<%= up.designation%>" type="text" placeholder="Designation" name="designation"><br><br>
+  <input value="<%= up.applicants%>" type="number" placeholder="Applicants" name="applicants"><br><br>
+  <input value="<%= up.jobtype%>" type="text" placeholder="Job Type" name="jobtype"><br><br>
+  <input value="<%= up.openingdate%>" type="text" placeholder="Opening date" name="openingdate"><br><br>
+  <input value="<%= up.closingdate%>" type="text" placeholder="Closing date" name="closingdate"><br><br>
+
+   <button type="submit" >SUBMIT</button>
+
+  </form>
+
+  <%- include('footer.ejs')%>
+
+
+
+
+
+</body>
+</html>
